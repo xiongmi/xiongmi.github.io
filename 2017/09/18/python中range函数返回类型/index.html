@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//litten.me">
   <title>python中range函数返回类型 | Edison Wong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list，为此我更正一下课程中跟大家讲的知识点。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着">
+  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存">
 <meta name="keywords" content="python 笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python中range函数返回类型">
 <meta property="og:url" content="//litten.me/2017/09/18/python中range函数返回类型/index.html">
 <meta property="og:site_name" content="Edison Wong的博客">
-<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list，为此我更正一下课程中跟大家讲的知识点。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着">
-<meta property="og:updated_time" content="2017-09-18T06:52:07.000Z">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存">
+<meta property="og:updated_time" content="2017-09-18T06:56:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python中range函数返回类型">
-<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list，为此我更正一下课程中跟大家讲的知识点。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存">
   
     <link rel="alternative" href="/atom.xml" title="Edison Wong的博客" type="application/atom+xml">
   
@@ -186,7 +186,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;range函数真正返回的是一个数字序列而不是列表list，为此我更正一下课程中跟大家讲的知识点。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存空间。我们可以把这种对象（range对象）成为可迭代对象。如果我们真的不死心，要把range函数返回的东西变成一个真正的列表，我们可以这么写：list(range(5))。这样输出后肯定是一个list了。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存空间。我们可以把这种对象（range对象）成为可迭代对象。如果我们真的不死心，要把range函数返回的东西变成一个真正的列表，我们可以这么写：list(range(5))。这样输出后肯定是一个list了。</p>
 
       
 
