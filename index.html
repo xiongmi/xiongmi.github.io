@@ -167,6 +167,80 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-python中range函数返回类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/18/python中range函数返回类型/">python中range函数返回类型</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/18/python中range函数返回类型/" class="archive-article-date">
+  	<time datetime="2017-09-18T06:51:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;range函数真正返回的是一个数字序列而不是列表list，为此我更正一下课程中跟大家讲的知识点。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存空间。我们可以把这种对象（range对象）成为可迭代对象。如果我们真的不死心，要把range函数返回的东西变成一个真正的列表，我们可以这么写：list(range(5))。这样输出后肯定是一个list了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">python 笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/18/python中range函数返回类型/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2017年下半年学习计划" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -337,6 +411,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">python 笔记</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
