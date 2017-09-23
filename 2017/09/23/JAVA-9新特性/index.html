@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>python中range函数返回类型 | Edison Wong的博客</title>
+  <title>JAVA 9新特性 | Edison Wong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存">
-<meta name="keywords" content="python 笔记">
+  <meta name="description" content="本硕均毕业于东北大学，现就职于蚂蚁金服。">
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python中range函数返回类型">
-<meta property="og:url" content="//litten.me/2017/09/18/python中range函数返回类型/index.html">
+<meta property="og:title" content="JAVA 9新特性">
+<meta property="og:url" content="//litten.me/2017/09/23/JAVA-9新特性/index.html">
 <meta property="og:site_name" content="Edison Wong的博客">
-<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存">
-<meta property="og:updated_time" content="2017-09-18T06:56:40.000Z">
+<meta property="og:description" content="本硕均毕业于东北大学，现就职于蚂蚁金服。">
+<meta property="og:updated_time" content="2017-09-23T07:20:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python中range函数返回类型">
-<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存">
+<meta name="twitter:title" content="JAVA 9新特性">
+<meta name="twitter:description" content="本硕均毕业于东北大学，现就职于蚂蚁金服。">
   
     <link rel="alternative" href="/atom.xml" title="Edison Wong的博客" type="application/atom+xml">
   
@@ -166,28 +166,27 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-python中range函数返回类型" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JAVA-9新特性" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      python中range函数返回类型
+      JAVA 9新特性
     </h1>
   
 
         
-        <a href="/2017/09/18/python中range函数返回类型/" class="archive-article-date">
-  	<time datetime="2017-09-18T06:51:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
+        <a href="/2017/09/23/JAVA-9新特性/" class="archive-article-date">
+  	<time datetime="2017-09-23T07:20:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存空间。我们可以把这种对象（range对象）成为可迭代对象。如果我们真的不死心，要把range函数返回的东西变成一个真正的列表，我们可以这么写：list(range(5))。这样输出后肯定是一个list了。</p>
-
+        
       
 
       
@@ -216,17 +215,6 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">python 笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -277,7 +265,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://litten.me/2017/09/18/python中range函数返回类型/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://litten.me/2017/09/23/JAVA-9新特性/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -291,18 +279,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/09/23/JAVA-9新特性/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JAVA 9新特性
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/07/2017年下半年学习计划/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">2017年下半年学习计划</div>
+    <a href="/2017/09/18/python中range函数返回类型/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python中range函数返回类型</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -332,7 +311,7 @@ var _hmt = _hmt || [];
   
 
   
-  <div id="SOHUCS" sid="python中range函数返回类型" ></div> 
+  <div id="SOHUCS" sid="JAVA-9新特性" ></div> 
 <script type="text/javascript"> 
 (function(){ 
 var appid = "cytcIleMn"; 
