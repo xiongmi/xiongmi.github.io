@@ -167,6 +167,69 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ZooKeeper体验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/25/ZooKeeper体验/">ZooKeeper体验</a>
+    </h1>
+  
+
+        
+        <a href="/2017/10/25/ZooKeeper体验/" class="archive-article-date">
+  	<time datetime="2017-10-25T10:52:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在学习分布式架构的时候遇到了ZooKeeper觉得很有意思 于是体验了一把：<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> org.apache.zookeeper.CreateMode;</div><div class="line"><span class="keyword">import</span> org.apache.zookeeper.ZooDefs.Ids;</div><div class="line"><span class="keyword">import</span> org.apache.zookeeper.ZooKeeper;</div><div class="line"></div><div class="line"><span class="keyword">public</span> class ZooKeeperTest &#123;</div><div class="line"></div><div class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="built_in">int</span> TIME_OUT = <span class="number">3000</span>;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">String</span> HOST = <span class="string">"localhost:2181"</span>;</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) <span class="keyword">throws</span> Exception&#123;</div><div class="line"></div><div class="line"></div><div class="line">    ZooKeeper zookeeper = <span class="keyword">new</span> ZooKeeper(HOST, TIME_OUT, <span class="keyword">null</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=========创建节点==========="</span>);</div><div class="line">    <span class="keyword">if</span>(zookeeper.exists(<span class="string">"/test"</span>, <span class="keyword">false</span>) == <span class="keyword">null</span>)</div><div class="line">    &#123;</div><div class="line">      zookeeper.create(<span class="string">"/test"</span>, <span class="string">"znode1"</span>.getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);</div><div class="line">    &#125;</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=============查看节点是否安装成功==============="</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="keyword">new</span> <span class="keyword">String</span>(zookeeper.getData(<span class="string">"/test"</span>, <span class="keyword">false</span>, <span class="keyword">null</span>)));</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=========修改节点的数据=========="</span>);</div><div class="line">    <span class="keyword">String</span> data = <span class="string">"zNode2"</span>;</div><div class="line">    zookeeper.setData(<span class="string">"/test"</span>, data.getBytes(), <span class="number">-1</span>);</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"========查看修改的节点是否成功========="</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="keyword">new</span> <span class="keyword">String</span>(zookeeper.getData(<span class="string">"/test"</span>, <span class="keyword">false</span>, <span class="keyword">null</span>)));</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=======删除节点=========="</span>);</div><div class="line">    zookeeper.delete(<span class="string">"/test"</span>, <span class="number">-1</span>);</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"==========查看节点是否被删除============"</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"节点状态："</span> + zookeeper.exists(<span class="string">"/test"</span>, <span class="keyword">false</span>));</div><div class="line"></div><div class="line">    zookeeper.close();</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/10/25/ZooKeeper体验/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-JAVA-9新特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
