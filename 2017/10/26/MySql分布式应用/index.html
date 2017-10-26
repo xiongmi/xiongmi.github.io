@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fkuq4ngmtrj30tc0gqwl7.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fkvw7r49xdj30p40neq8s.jpg">
 <meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fkvw7r49xdj30p40neq8s.jpg">
-<meta property="og:updated_time" content="2017-10-26T12:25:24.000Z">
+<meta property="og:updated_time" content="2017-10-26T12:31:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySql分布式应用">
 <meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;MySql主要的几种分布式策略： &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.业务拆分：将原有的集中数据库按照不同的业务划分到不同的数据库中。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.复制策略：MySql中repl">
@@ -193,6 +193,7 @@ var _hmt = _hmt || [];
         <p>&nbsp;&nbsp;&nbsp;&nbsp;MySql主要的几种分布式策略：</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.业务拆分：将原有的集中数据库按照不同的业务划分到不同的数据库中。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.复制策略：MySql中replication策略对系统进行扩展。需要借用MySql的binary log机制。（多嘴说一句：MySQL有几种不同的日志文件，通常包括错误日志文件，二进制日志，通用日志，慢查询日志，等等。）有以下两种架构：<img src="https://ws3.sinaimg.cn/large/006tNc79ly1fkuq4ngmtrj30tc0gqwl7.jpg" alt=""></p>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fkvw7r49xdj30p40neq8s.jpg" alt=""><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fkvw7r49xdj30p40neq8s.jpg" alt=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.分库和分表：对于互联网应用来说，很有可能会达到上千万级别，面临着极高的并发访问。需要对数据库的吞吐能力进行进一步的扩展，以满足高并发访问与海量数据存储的需要。分表：例如支付宝通常将id的倒数13、14位作为分表字段（正好代表了用户id）。分库：分表本质上是减少单表的记录个数，从而提高查询效率。然而并不能给高并发的读写访问带来质的飞越。这里我们需要利用分库；分库策略倒是和分表差不多。面临既分库有分表的情况时，相对来说路由策略要复杂一下，但是也不会太难。</p>
+<p>这里需要提一下，在业务拆分和分库分表之后，会带来一系列问题，比如说跨表事务变为分布式事务，难以进行多表关联查询，不能指定路由字段对数据进行查询。而HBase能够很好的支持海量数据的存储，能够以更友好、方便的方式支持表的分区，能够较为方便地扩展系统的并发写入能力。</p>
 
       
 
