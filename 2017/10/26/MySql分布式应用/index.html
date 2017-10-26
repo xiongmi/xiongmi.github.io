@@ -6,18 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//litten.me">
-  <title>Edison Wong的博客</title>
+  <title>MySql分布式应用 | Edison Wong的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本硕均毕业于东北大学，现就职于蚂蚁金服。">
+  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;MySql主要的几种分布式策略： &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.业务拆分：将原有的集中数据库按照不同的业务划分到不同的数据库中。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.复制策略：MySql中repl">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Edison Wong的博客">
-<meta property="og:url" content="//litten.me/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySql分布式应用">
+<meta property="og:url" content="//litten.me/2017/10/26/MySql分布式应用/index.html">
 <meta property="og:site_name" content="Edison Wong的博客">
-<meta property="og:description" content="本硕均毕业于东北大学，现就职于蚂蚁金服。">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;MySql主要的几种分布式策略： &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.业务拆分：将原有的集中数据库按照不同的业务划分到不同的数据库中。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.复制策略：MySql中repl">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fkuq4ngmtrj30tc0gqwl7.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fkvw7r49xdj30p40neq8s.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/006tNc79ly1fkvw7r49xdj30p40neq8s.jpg">
+<meta property="og:updated_time" content="2017-10-26T12:25:24.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Edison Wong的博客">
-<meta name="twitter:description" content="本硕均毕业于东北大学，现就职于蚂蚁金服。">
+<meta name="twitter:title" content="MySql分布式应用">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;MySql主要的几种分布式策略： &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;1.业务拆分：将原有的集中数据库按照不同的业务划分到不同的数据库中。&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;2.复制策略：MySql中repl">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fkuq4ngmtrj30tc0gqwl7.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Edison Wong的博客" type="application/atom+xml">
   
@@ -165,16 +170,14 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-MySql分布式应用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-MySql分布式应用" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/26/MySql分布式应用/">MySql分布式应用</a>
+    <h1 class="article-title" itemprop="name">
+      MySql分布式应用
     </h1>
   
 
@@ -194,6 +197,27 @@ var _hmt = _hmt || [];
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>i like you!<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -201,16 +225,75 @@ var _hmt = _hmt || [];
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/26/MySql分布式应用/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://litten.me/2017/10/26/MySql分布式应用/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/25/ZooKeeper体验/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ZooKeeper体验</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -230,317 +313,23 @@ var _hmt = _hmt || [];
 
 
 
-
   
-    <article id="post-ZooKeeper体验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/25/ZooKeeper体验/">ZooKeeper体验</a>
-    </h1>
   
 
-        
-        <a href="/2017/10/25/ZooKeeper体验/" class="archive-article-date">
-  	<time datetime="2017-10-25T10:52:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天在学习分布式架构的时候遇到了ZooKeeper觉得很有意思 于是体验了一把：<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> org.apache.zookeeper.CreateMode;</div><div class="line"><span class="keyword">import</span> org.apache.zookeeper.ZooDefs.Ids;</div><div class="line"><span class="keyword">import</span> org.apache.zookeeper.ZooKeeper;</div><div class="line"></div><div class="line"><span class="keyword">public</span> class ZooKeeperTest &#123;</div><div class="line"></div><div class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="built_in">int</span> TIME_OUT = <span class="number">3000</span>;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">String</span> HOST = <span class="string">"localhost:2181"</span>;</div><div class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(<span class="keyword">String</span>[] args) <span class="keyword">throws</span> Exception&#123;</div><div class="line"></div><div class="line"></div><div class="line">    ZooKeeper zookeeper = <span class="keyword">new</span> ZooKeeper(HOST, TIME_OUT, <span class="keyword">null</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=========创建节点==========="</span>);</div><div class="line">    <span class="keyword">if</span>(zookeeper.exists(<span class="string">"/test"</span>, <span class="keyword">false</span>) == <span class="keyword">null</span>)</div><div class="line">    &#123;</div><div class="line">      zookeeper.create(<span class="string">"/test"</span>, <span class="string">"znode1"</span>.getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);</div><div class="line">    &#125;</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=============查看节点是否安装成功==============="</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="keyword">new</span> <span class="keyword">String</span>(zookeeper.getData(<span class="string">"/test"</span>, <span class="keyword">false</span>, <span class="keyword">null</span>)));</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=========修改节点的数据=========="</span>);</div><div class="line">    <span class="keyword">String</span> data = <span class="string">"zNode2"</span>;</div><div class="line">    zookeeper.setData(<span class="string">"/test"</span>, data.getBytes(), <span class="number">-1</span>);</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"========查看修改的节点是否成功========="</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="keyword">new</span> <span class="keyword">String</span>(zookeeper.getData(<span class="string">"/test"</span>, <span class="keyword">false</span>, <span class="keyword">null</span>)));</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"=======删除节点=========="</span>);</div><div class="line">    zookeeper.delete(<span class="string">"/test"</span>, <span class="number">-1</span>);</div><div class="line"></div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"==========查看节点是否被删除============"</span>);</div><div class="line">    System.out.<span class="built_in">println</span>(<span class="string">"节点状态："</span> + zookeeper.exists(<span class="string">"/test"</span>, <span class="keyword">false</span>));</div><div class="line"></div><div class="line">    zookeeper.close();</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在实际应用中，可能会遇到两种不同的异常，为此我们可以考虑采用zkClient该第三方客户端工具包来进行开发，主要好处有三点：<br>1.可以在watcher完成后 自动注册新的相同的watcher。<br>2.在发生session expire异常后，会自动创建新的ZooKeeper实例进行重连。当然原有的非永久和watcher节点都会失效。<br>3.提供了接口，可以进行序列化和反序列化的相关操作，简化了znode的数据存储。<br><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fkuq4ngmtrj30tc0gqwl7.jpg" alt=""></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分布式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">ZooKeeper</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分布式//" class="article-tag-list-link color4">分布式</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/10/25/ZooKeeper体验/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-JAVA-9新特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/23/JAVA-9新特性/">JAVA 9新特性</a>
-    </h1>
+  <div id="SOHUCS" sid="MySql分布式应用" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cytcIleMn"; 
+var conf = "prod_11c1756a180850dd15f541e769747231"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 
-        
-        <a href="/2017/09/23/JAVA-9新特性/" class="archive-article-date">
-  	<time datetime="2017-09-23T07:20:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/23/JAVA-9新特性/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-python中range函数返回类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/18/python中range函数返回类型/">python中range函数返回类型</a>
-    </h1>
   
 
-        
-        <a href="/2017/09/18/python中range函数返回类型/" class="archive-article-date">
-  	<time datetime="2017-09-18T06:51:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;range函数真正返回的是一个数字序列而不是列表list。虽然在很多情况下，range函数的返回值的行为怎么看都像一个list，因为我们可以一个个的读取里面的数字，赋值给for循环的变量。但请不要抱有幻想，它确实不是一个列表了。它只是在每次迭代循环的时候返回一个数字，像列表返回元素那样，实际上，在内存中并没有存着一个list对象，这样同时还节省了内存空间。我们可以把这种对象（range对象）成为可迭代对象。如果我们真的不死心，要把range函数返回的东西变成一个真正的列表，我们可以这么写：list(range(5))。这样输出后肯定是一个list了。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">python 笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/18/python中range函数返回类型/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-2017年下半年学习计划" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/07/2017年下半年学习计划/">2017年下半年学习计划</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/07/2017年下半年学习计划/" class="archive-article-date">
-  	<time datetime="2017-09-07T12:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-07</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="想做的太多，总是没有计划去实现，觉得是时候需要改变啦。"><a href="#想做的太多，总是没有计划去实现，觉得是时候需要改变啦。" class="headerlink" title="想做的太多，总是没有计划去实现，觉得是时候需要改变啦。"></a>想做的太多，总是没有计划去实现，觉得是时候需要改变啦。</h3><ul>
-<li>阅读代码整洁之道，尝试去编写一些优雅的代码，感觉之前的代码太乱了，想到啥就写啥。</li>
-<li>阅读高性能Mysql，不求完全搞懂，但起码最基本的知识要求掌握的。</li>
-<li>完成小论文和毕业设计工作。</li>
-<li>锻炼身体，养成好的作息习惯，从今天起，11点半之前必须睡觉。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">计划</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/07/2017年下半年学习计划/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -563,8 +352,8 @@ var _hmt = _hmt || [];
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
